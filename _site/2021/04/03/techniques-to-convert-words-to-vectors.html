@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,maximum-scale=2">
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css?v=73e9f6699365d9c28c9bcf55d61922b19b73b4f2">
+
+<!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Techniques To Convert Words To Vectors | cuddle-ai</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Techniques To Convert Words To Vectors" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Different techniques to convert words to vectors" />
+<meta property="og:description" content="Different techniques to convert words to vectors" />
+<link rel="canonical" href="http://localhost:4000/2021/04/03/techniques-to-convert-words-to-vectors.html" />
+<meta property="og:url" content="http://localhost:4000/2021/04/03/techniques-to-convert-words-to-vectors.html" />
+<meta property="og:site_name" content="cuddle-ai" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-04-03T00:00:00+05:30" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Techniques To Convert Words To Vectors" />
+<script type="application/ld+json">
+{"headline":"Techniques To Convert Words To Vectors","dateModified":"2021-04-03T00:00:00+05:30","datePublished":"2021-04-03T00:00:00+05:30","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2021/04/03/techniques-to-convert-words-to-vectors.html"},"description":"Different techniques to convert words to vectors","url":"http://localhost:4000/2021/04/03/techniques-to-convert-words-to-vectors.html","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/cskuracha/cuddle-ai">View on GitHub</a>
+
+          <h1 id="project_title">cuddle-ai</h1>
+          <h2 id="project_tagline"></h2>
+
+          
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h2 id="different-techniques-to-convert-words-to-vectors">Different techniques to convert words to vectors</h2>
+
+<p>In Machine Learning, we want to convert words into vectors to fully utilize the mathematical functions for the model.</p>
+
+<p>There are various techniques using which we can convert words into vectors. We will look into those techniques in this article.</p>
+
+<p>Below are few techniques which can convert words to vectors:</p>
+
+<ol>
+  <li>
+    <p>Bag of Words (BOW)</p>
+  </li>
+  <li>
+    <p>TF-IDF Vectorizer</p>
+  </li>
+  <li>
+    <p>Word2Vec</p>
+  </li>
+</ol>
+
+<h4 id="input-text">Input Text</h4>
+
+<p>Lets say we have 4 sentences which we want to convert to vectors:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt; This headphone is amazing
+
+&gt; Noise Cancelling in this headphone is really awesome
+
+&gt; This headphone is not good
+
+&gt; This headphone is TrulyWireless and works as described in the description
+</code></pre></div></div>
+
+<h4 id="bag-of-words-bow">Bag of Words (BoW)</h4>
+
+<p>This is the simplest way to convert text to a vector. Basic idea of this technique is store all unique words in a list and for each sentence we will create a vector of length same as unique words. This creates a <em>sparse vector</em> where most of the values in the vector are zeros.</p>
+
+<p>From our above example, our Bag of unique words contains:</p>
+
+<blockquote>
+  <p>{This, headphone, is, amazing, Noise, Cancelling, in, really, awesome, not, good, TrulyWireless, and, works, as, described, the, description}</p>
+</blockquote>
+
+<p>Here we have 18 unique words in the bag, so we will represent each of the sentense in a vector of length 18.</p>
+
+<p>Representation of sentence 1 -&gt; This headphone is amazing -&gt; <code class="language-plaintext highlighter-rouge">[1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0]</code></p>
+
+<p>Similarly other sentences can be represented as,</p>
+
+<p>Noise Cancelling in this headphone is really awesome -&gt; <code class="language-plaintext highlighter-rouge">[1,1,1,0,1,1,1,1,1,0,0,0,0,0,0,0,0,0]</code></p>
+
+<p>This headphone is not good -&gt; <code class="language-plaintext highlighter-rouge">[1,1,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0]</code></p>
+
+<p>Same is repeated for other sentence</p>
+
+<h4 id="tf-idf-vectorizer">TF-IDF Vectorizer</h4>
+
+<p>Bag of Words simply convert each word into a vector without considering the importance of the word. In TF-IDF, we will consider the frequency of word into consideration.</p>
+
+<h5 id="tf-term-frequency">TF (Term Frequency):</h5>
+
+<p>How often a word occurs in corpus. If a word occurs multiple times, then TF of the word will be high</p>
+
+<h5 id="idf-inverse-document-frequency">IDF (Inverse Document Frequency):</h5>
+
+<p>How rare a word occurs in corpus. If a word is rare, then the IDF of the word will be high</p>
+
+<p>By combining TF-IDF, we are giving importance to rare word in corpus and frequency of occurance in current sentence</p>
+
+<p>From our above example, our unique words are:</p>
+
+<blockquote>
+  <p>{This, headphone, is, amazing, Noise, Cancelling, in, really, awesome, not, good, TrulyWireless, and, works, as, described, the, description}</p>
+</blockquote>
+
+<p>For computing the TF-IDF of a word in Sentence 1, consider ‘This’ word</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">TF</span><span class="p">(</span><span class="s">'This'</span><span class="p">)</span> <span class="p">:</span> <span class="mi">1</span><span class="o">/</span><span class="mi">4</span>
+<span class="n">IDF</span><span class="p">(</span><span class="s">'This'</span><span class="p">):</span> <span class="n">log</span><span class="p">(</span><span class="mi">4</span><span class="o">/</span><span class="mi">4</span><span class="p">)</span>
+<span class="n">TF</span><span class="o">-</span><span class="n">IDF</span><span class="p">(</span><span class="s">'This'</span><span class="p">)</span><span class="o">=</span><span class="n">TF</span><span class="p">(</span><span class="s">'This'</span><span class="p">)</span><span class="o">*</span><span class="n">IDF</span><span class="p">(</span><span class="s">'This'</span><span class="p">)</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="mi">4</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">log</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span><span class="o">=</span><span class="mi">0</span>
+
+</code></pre></div></div>
+<p>Here word ‘This’ occurs very frequently in the document corpus and is not a important word and hence TF-IDF of ‘This’ is 0</p>
+
+<p>so, we will update TF-IDF of Sentence 1 as -&gt; This headphone is amazing -&gt;</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[</span><span class="n">TF</span><span class="o">-</span><span class="n">IDF</span><span class="p">(</span><span class="s">'This'</span><span class="p">),</span><span class="n">TF</span><span class="o">-</span><span class="n">IDF</span><span class="p">(</span><span class="s">'headphone'</span><span class="p">),</span><span class="n">TF</span><span class="o">-</span><span class="n">IDF</span><span class="p">(</span><span class="s">'is'</span><span class="p">),</span><span class="n">TF</span><span class="o">-</span><span class="n">IDF</span><span class="p">(</span><span class="s">'amazing'</span><span class="p">),</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span>
+</code></pre></div></div>
+
+<h4 id="word2vec">Word2Vec</h4>
+
+<p>Word2Vec considers the semantic meaning and generates vectors for each word. Word2Vec considers the context and relation between the words. 
+Distance between vectors of similar words is less. For example, distance between vectors generated by Word2Vec for King and Queen will be similar to distance between vectors for Man and Woman.
+Word2Vec learns the vectors from large document corpus.</p>
+
+<h4 id="conclusion">Conclusion:</h4>
+
+<p>Using above techniques, we can convert words into vectors on which we can apply transformation that are useful for machine learning.</p>
+
+<p>I will try to create blog for each of the techniques more elaborately.</p>
+
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        
+        <p class="copyright">cuddle-ai maintained by <a href="https://github.com/cskuracha">cskuracha</a></p>
+        
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+  </body>
+</html>

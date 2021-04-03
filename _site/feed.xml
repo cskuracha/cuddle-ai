@@ -1,1 +1,99 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-04-03T23:52:51+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">cuddle-ai</title><entry><title type="html">Test Post</title><link href="http://localhost:4000/2021/04/03/Test-Post.html" rel="alternate" type="text/html" title="Test Post" /><published>2021-04-03T00:00:00+05:30</published><updated>2021-04-03T00:00:00+05:30</updated><id>http://localhost:4000/2021/04/03/Test-Post</id><content type="html" xml:base="http://localhost:4000/2021/04/03/Test-Post.html"></content><author><name></name></author><summary type="html"></summary></entry></feed>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-04-04T02:10:57+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">cuddle-ai</title><entry><title type="html">Techniques To Convert Words To Vectors</title><link href="http://localhost:4000/2021/04/03/techniques-to-convert-words-to-vectors.html" rel="alternate" type="text/html" title="Techniques To Convert Words To Vectors" /><published>2021-04-03T00:00:00+05:30</published><updated>2021-04-03T00:00:00+05:30</updated><id>http://localhost:4000/2021/04/03/techniques-to-convert-words-to-vectors</id><content type="html" xml:base="http://localhost:4000/2021/04/03/techniques-to-convert-words-to-vectors.html">&lt;h2 id=&quot;different-techniques-to-convert-words-to-vectors&quot;&gt;Different techniques to convert words to vectors&lt;/h2&gt;
+
+&lt;p&gt;In Machine Learning, we want to convert words into vectors to fully utilize the mathematical functions for the model.&lt;/p&gt;
+
+&lt;p&gt;There are various techniques using which we can convert words into vectors. We will look into those techniques in this article.&lt;/p&gt;
+
+&lt;p&gt;Below are few techniques which can convert words to vectors:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Bag of Words (BOW)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;TF-IDF Vectorizer&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Word2Vec&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;input-text&quot;&gt;Input Text&lt;/h4&gt;
+
+&lt;p&gt;Lets say we have 4 sentences which we want to convert to vectors:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; This headphone is amazing
+
+&amp;gt; Noise Cancelling in this headphone is really awesome
+
+&amp;gt; This headphone is not good
+
+&amp;gt; This headphone is TrulyWireless and works as described in the description
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;bag-of-words-bow&quot;&gt;Bag of Words (BoW)&lt;/h4&gt;
+
+&lt;p&gt;This is the simplest way to convert text to a vector. Basic idea of this technique is store all unique words in a list and for each sentence we will create a vector of length same as unique words. This creates a &lt;em&gt;sparse vector&lt;/em&gt; where most of the values in the vector are zeros.&lt;/p&gt;
+
+&lt;p&gt;From our above example, our Bag of unique words contains:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;{This, headphone, is, amazing, Noise, Cancelling, in, really, awesome, not, good, TrulyWireless, and, works, as, described, the, description}&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Here we have 18 unique words in the bag, so we will represent each of the sentense in a vector of length 18.&lt;/p&gt;
+
+&lt;p&gt;Representation of sentence 1 -&amp;gt; This headphone is amazing -&amp;gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;[1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0]&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Similarly other sentences can be represented as,&lt;/p&gt;
+
+&lt;p&gt;Noise Cancelling in this headphone is really awesome -&amp;gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;[1,1,1,0,1,1,1,1,1,0,0,0,0,0,0,0,0,0]&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;This headphone is not good -&amp;gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;[1,1,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0]&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Same is repeated for other sentence&lt;/p&gt;
+
+&lt;h4 id=&quot;tf-idf-vectorizer&quot;&gt;TF-IDF Vectorizer&lt;/h4&gt;
+
+&lt;p&gt;Bag of Words simply convert each word into a vector without considering the importance of the word. In TF-IDF, we will consider the frequency of word into consideration.&lt;/p&gt;
+
+&lt;h5 id=&quot;tf-term-frequency&quot;&gt;TF (Term Frequency):&lt;/h5&gt;
+
+&lt;p&gt;How often a word occurs in corpus. If a word occurs multiple times, then TF of the word will be high&lt;/p&gt;
+
+&lt;h5 id=&quot;idf-inverse-document-frequency&quot;&gt;IDF (Inverse Document Frequency):&lt;/h5&gt;
+
+&lt;p&gt;How rare a word occurs in corpus. If a word is rare, then the IDF of the word will be high&lt;/p&gt;
+
+&lt;p&gt;By combining TF-IDF, we are giving importance to rare word in corpus and frequency of occurance in current sentence&lt;/p&gt;
+
+&lt;p&gt;From our above example, our unique words are:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;{This, headphone, is, amazing, Noise, Cancelling, in, really, awesome, not, good, TrulyWireless, and, works, as, described, the, description}&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;For computing the TF-IDF of a word in Sentence 1, consider ‘This’ word&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;TF&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;This&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;IDF&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;This&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;TF&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;IDF&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;This&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;TF&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;This&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;IDF&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;This&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Here word ‘This’ occurs very frequently in the document corpus and is not a important word and hence TF-IDF of ‘This’ is 0&lt;/p&gt;
+
+&lt;p&gt;so, we will update TF-IDF of Sentence 1 as -&amp;gt; This headphone is amazing -&amp;gt;&lt;/p&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;TF&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;IDF&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;This&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;TF&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;IDF&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;headphone&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;TF&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;IDF&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;is&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;TF&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;IDF&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;amazing&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;word2vec&quot;&gt;Word2Vec&lt;/h4&gt;
+
+&lt;p&gt;Word2Vec considers the semantic meaning and generates vectors for each word. Word2Vec considers the context and relation between the words. 
+Distance between vectors of similar words is less. For example, distance between vectors generated by Word2Vec for King and Queen will be similar to distance between vectors for Man and Woman.
+Word2Vec learns the vectors from large document corpus.&lt;/p&gt;
+
+&lt;h4 id=&quot;conclusion&quot;&gt;Conclusion:&lt;/h4&gt;
+
+&lt;p&gt;Using above techniques, we can convert words into vectors on which we can apply transformation that are useful for machine learning.&lt;/p&gt;
+
+&lt;p&gt;I will try to create blog for each of the techniques more elaborately.&lt;/p&gt;</content><author><name></name></author><summary type="html">Different techniques to convert words to vectors</summary></entry><entry><title type="html">Test Post</title><link href="http://localhost:4000/2021/04/03/Test-Post.html" rel="alternate" type="text/html" title="Test Post" /><published>2021-04-03T00:00:00+05:30</published><updated>2021-04-03T00:00:00+05:30</updated><id>http://localhost:4000/2021/04/03/Test-Post</id><content type="html" xml:base="http://localhost:4000/2021/04/03/Test-Post.html"></content><author><name></name></author><summary type="html"></summary></entry></feed>
