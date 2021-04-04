@@ -1,4 +1,48 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-04-04T15:28:45+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">cuddle-ai</title><author><name>Chaitanya Sagar Kuracha</name></author><entry><title type="html">Different techniques to convert words to vectors</title><link href="http://localhost:4000/2021/04/03/techniques-to-convert-words-to-vectors.html" rel="alternate" type="text/html" title="Different techniques to convert words to vectors" /><published>2021-04-03T00:00:00+05:30</published><updated>2021-04-03T00:00:00+05:30</updated><id>http://localhost:4000/2021/04/03/techniques-to-convert-words-to-vectors</id><content type="html" xml:base="http://localhost:4000/2021/04/03/techniques-to-convert-words-to-vectors.html">&lt;p&gt;In Machine Learning, we want to convert words into vectors to fully utilize the mathematical functions for the model.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-04-04T20:03:43+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">cuddle-ai</title><author><name>Chaitanya Sagar Kuracha</name></author><entry><title type="html">Classification and Regression</title><link href="http://localhost:4000/2021/04/04/Classification-and-regression.html" rel="alternate" type="text/html" title="Classification and Regression" /><published>2021-04-04T00:00:00+05:30</published><updated>2021-04-04T00:00:00+05:30</updated><id>http://localhost:4000/2021/04/04/Classification-and-regression</id><content type="html" xml:base="http://localhost:4000/2021/04/04/Classification-and-regression.html">&lt;p&gt;In this article, we will look into two different kinds of Machine learning algorithms, Classification and Regression models.&lt;/p&gt;
+
+&lt;p&gt;The main objective of Machine learning model is to find a function f, such that when a query point (x_q) is passed thru the function f, it will return desired output (y_q_^)&lt;/p&gt;
+
+&lt;h3 id=&quot;classification&quot;&gt;Classification:&lt;/h3&gt;
+
+&lt;p&gt;Lets consider an example for understanding the classification problems. Say, we want to classify reviews in an eCommerce website and typically we need to classify each review as positive review, negative review or neutral review. 
+This type of problem is called Classification problem.&lt;/p&gt;
+
+&lt;p&gt;Here when we look closely, we are classifying the datapoints into set of classes like positive, negative, neutral etc.. This kind of technique is called Classification.&lt;/p&gt;
+
+&lt;p&gt;We can interpret classification dataset as below:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;img src=&quot;/assets/images/2021-04-04-Classifiction-and-regression-1.jpg&quot; alt=&quot;Classification&quot; /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;where x is input data and y is the output class.&lt;/p&gt;
+
+&lt;h3 id=&quot;regression&quot;&gt;Regression:&lt;/h3&gt;
+
+&lt;p&gt;Consider this example for understanding regression problems. Say, we want to predict the heights of students in a school. Here our predicted value is a real number since height is a real number.&lt;/p&gt;
+
+&lt;p&gt;We can interpret regression dataset as below:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;img src=&quot;/assets/images/2021-04-04-Classifiction-and-regression-2.jpg&quot; alt=&quot;Regression&quot; /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;where x is input data and y is a real valued number&lt;/p&gt;
+
+&lt;h3 id=&quot;did-you-observe-difference-between-classification-and-regression-&quot;&gt;Did you observe difference between Classification and Regression ?&lt;/h3&gt;
+
+&lt;p&gt;If you observe closely on the dataset interpretations for Classification and Regression,  we can see the difference in the output variable ‘y’.&lt;/p&gt;
+
+&lt;p&gt;In Classification, ‘y’ is a finite number where as in Regression, ‘y’ is a real valued number, which is a difference on very high level. We will understand more differences as we go on.&lt;/p&gt;
+
+&lt;h3 id=&quot;bottomline&quot;&gt;Bottomline:&lt;/h3&gt;
+
+&lt;p&gt;On simple and very highlevel terms, difference between Classification and Regression comes to difference between finite integer and Real valued number 😃&lt;/p&gt;
+
+&lt;p&gt;Hope you like this article and feel free to share your comments.&lt;/p&gt;</content><author><name>Chaitanya Sagar Kuracha</name></author><summary type="html">In this article, we will look into two different kinds of Machine learning algorithms, Classification and Regression models.</summary></entry><entry><title type="html">Test Post</title><link href="http://localhost:4000/2021/04/03/Test-Post.html" rel="alternate" type="text/html" title="Test Post" /><published>2021-04-03T00:00:00+05:30</published><updated>2021-04-03T00:00:00+05:30</updated><id>http://localhost:4000/2021/04/03/Test-Post</id><content type="html" xml:base="http://localhost:4000/2021/04/03/Test-Post.html">&lt;p&gt;This is a Test Page&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-math&quot;&gt;a+b=c
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;{(x_i,y_i)}&lt;/p&gt;</content><author><name>Chaitanya Sagar Kuracha</name></author><summary type="html">This is a Test Page a+b=c {(x_i,y_i)}</summary></entry><entry><title type="html">Different techniques to convert words to vectors</title><link href="http://localhost:4000/2021/04/03/techniques-to-convert-words-to-vectors.html" rel="alternate" type="text/html" title="Different techniques to convert words to vectors" /><published>2021-04-03T00:00:00+05:30</published><updated>2021-04-03T00:00:00+05:30</updated><id>http://localhost:4000/2021/04/03/techniques-to-convert-words-to-vectors</id><content type="html" xml:base="http://localhost:4000/2021/04/03/techniques-to-convert-words-to-vectors.html">&lt;p&gt;In Machine Learning, we want to convert words into vectors to fully utilize the mathematical functions for the model.&lt;/p&gt;
 
 &lt;p&gt;There are various techniques using which we can convert words into vectors. We will look into those techniques in this article.&lt;/p&gt;
 
@@ -100,6 +144,4 @@ Word2Vec learns the vectors from large document corpus.&lt;/p&gt;
 
 &lt;p&gt;Using above techniques, we can convert words into vectors on which we can apply transformation that are useful for machine learning.&lt;/p&gt;
 
-&lt;p&gt;I will try to create blog for each of the techniques more elaborately.&lt;/p&gt;</content><author><name>Chaitanya Sagar Kuracha</name></author><summary type="html">In Machine Learning, we want to convert words into vectors to fully utilize the mathematical functions for the model.</summary></entry><entry><title type="html">Test Post</title><link href="http://localhost:4000/2021/04/03/Test-Post.html" rel="alternate" type="text/html" title="Test Post" /><published>2021-04-03T00:00:00+05:30</published><updated>2021-04-03T00:00:00+05:30</updated><id>http://localhost:4000/2021/04/03/Test-Post</id><content type="html" xml:base="http://localhost:4000/2021/04/03/Test-Post.html">&lt;p&gt;This is a Test Page&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-math&quot;&gt;a+b=c
-&lt;/code&gt;&lt;/pre&gt;</content><author><name>Chaitanya Sagar Kuracha</name></author><summary type="html">This is a Test Page a+b=c</summary></entry></feed>
+&lt;p&gt;I will try to create blog for each of the techniques more elaborately.&lt;/p&gt;</content><author><name>Chaitanya Sagar Kuracha</name></author><summary type="html">In Machine Learning, we want to convert words into vectors to fully utilize the mathematical functions for the model.</summary></entry></feed>
