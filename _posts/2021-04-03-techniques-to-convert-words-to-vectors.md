@@ -1,3 +1,6 @@
+---
+layout: splash
+---
 ## Different techniques to convert words to vectors
 
 
