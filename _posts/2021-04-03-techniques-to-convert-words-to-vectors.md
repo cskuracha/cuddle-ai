@@ -1,6 +1,5 @@
 ---
-layout: categories
-classes: dark-theme
+layout: single
 title: Different techniques to convert words to vectors
 ---
 
