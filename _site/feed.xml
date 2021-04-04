@@ -1,4 +1,68 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-04-04T20:34:52+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">cuddle-ai</title><author><name>Chaitanya Sagar Kuracha</name></author><entry><title type="html">Classification and Regression</title><link href="http://localhost:4000/2021/04/04/Classification-and-regression.html" rel="alternate" type="text/html" title="Classification and Regression" /><published>2021-04-04T00:00:00+05:30</published><updated>2021-04-04T00:00:00+05:30</updated><id>http://localhost:4000/2021/04/04/Classification-and-regression</id><content type="html" xml:base="http://localhost:4000/2021/04/04/Classification-and-regression.html">&lt;p&gt;In this article, we will look into two different kinds of Machine learning algorithms, Classification and Regression models.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-04-04T22:45:52+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">cuddle-ai</title><author><name>Chaitanya Sagar Kuracha</name></author><entry><title type="html">Distance Measures</title><link href="http://localhost:4000/2021/04/04/Distance-Measures.html" rel="alternate" type="text/html" title="Distance Measures" /><published>2021-04-04T00:00:00+05:30</published><updated>2021-04-04T00:00:00+05:30</updated><id>http://localhost:4000/2021/04/04/Distance-Measures</id><content type="html" xml:base="http://localhost:4000/2021/04/04/Distance-Measures.html">&lt;p&gt;In this article, we will look into different distance measures we will use in Machine Learning.&lt;/p&gt;
+
+&lt;h3 id=&quot;1-euclidean-distance-l2&quot;&gt;1. Euclidean Distance (L2):&lt;/h3&gt;
+
+&lt;p&gt;Euclidean Distance is most frequently used distance measure.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;img src=&quot;/assets/images/2021-04-04-distance-measures-1.jpg&quot; alt=&quot;Graph&quot; /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;If we observe the above picture, variable ‘d’ is called the Euclidean distance (L2). It is called the shortest distance from X1 to X2.&lt;/p&gt;
+
+&lt;p&gt;In above picture, we have two features, f1 and f2 and two datapoints in 2D, X1 and X2.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;img src=&quot;/assets/images/2021-04-04-distance-measures-3.jpg&quot; alt=&quot;Euclidean Measure&quot; /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Euclidean distance can be formulated as&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;img src=&quot;/assets/images/2021-04-04-distance-measures-2.jpg&quot; alt=&quot;Euclidean Measure&quot; /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;2-manhattan-distance-l1&quot;&gt;2. Manhattan Distance (L1):&lt;/h3&gt;
+
+&lt;p&gt;Manhattan Distance is next frequently used and simple distance measure.&lt;/p&gt;
+
+&lt;p&gt;From above graph, Manhattan distance can be formulatted as,&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;img src=&quot;/assets/images/2021-04-04-distance-measures-4.jpg&quot; alt=&quot;Manhattan Measure&quot; /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;3-minkowski-distance-lp&quot;&gt;3. Minkowski Distance (LP):&lt;/h3&gt;
+
+&lt;p&gt;Minkowski Distance is the generalized distance measure and can be formulated as,&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;img src=&quot;/assets/images/2021-04-04-distance-measures-5.jpg&quot; alt=&quot;Minkowski Measure&quot; /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;When p=1 in Minkowski Distance, it becomes &lt;em&gt;Manhattan Distance&lt;/em&gt; and when p=2, it becomes &lt;em&gt;Euclidean distance&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Manhattan distance is also called as L1-Norm and Euclidean distance is called as L2-Norm&lt;/p&gt;
+
+&lt;h3 id=&quot;4-hamming-distance&quot;&gt;4. Hamming Distance:&lt;/h3&gt;
+
+&lt;p&gt;Hamming distance is widely used in text processing and it gives us the # of difference of values between dimensions in vectors.
+Hamming distance will  be used in Gene sequence.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;img src=&quot;/assets/images/2021-04-04-distance-measures-6.jpg&quot; alt=&quot;Hamming Distance&quot; /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Above sequence generates value of 2 as there is differencce of values in 7 and 10 dimensions&lt;/p&gt;
+
+&lt;p&gt;There are other measures as well and we will understand about few of them in the future. One such important and widely used measure is &lt;em&gt;Cosine Distance&lt;/em&gt; and &lt;em&gt;Cosine similarity&lt;/em&gt;, we will see this in upcoming articles.&lt;/p&gt;
+
+&lt;h3 id=&quot;bottomline&quot;&gt;Bottomline:&lt;/h3&gt;
+
+&lt;p&gt;There are many distance measures that are used in Machine Learning and few of them are Manhattan distance, Euclidean distance, Minkowski distance and Hamming distance. 
+There are other distance measures also which are widely used and we will see them in future articles.&lt;/p&gt;
+
+&lt;p&gt;Hope you like this article and please share your feedback.&lt;/p&gt;</content><author><name>Chaitanya Sagar Kuracha</name></author><summary type="html">In this article, we will look into different distance measures we will use in Machine Learning.</summary></entry><entry><title type="html">Classification and Regression</title><link href="http://localhost:4000/2021/04/04/Classification-and-regression.html" rel="alternate" type="text/html" title="Classification and Regression" /><published>2021-04-04T00:00:00+05:30</published><updated>2021-04-04T00:00:00+05:30</updated><id>http://localhost:4000/2021/04/04/Classification-and-regression</id><content type="html" xml:base="http://localhost:4000/2021/04/04/Classification-and-regression.html">&lt;p&gt;In this article, we will look into two different kinds of Machine learning algorithms, Classification and Regression models.&lt;/p&gt;
 
 &lt;p&gt;The main objective of Machine learning model is to find a function f, such that when a query point (x_q) is passed thru the function f, it will return desired output (y_q_^)&lt;/p&gt;
 

@@ -9,8 +9,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Classification and Regression - cuddle-ai</title>
-<meta name="description" content="In this article, we will look into two different kinds of Machine learning algorithms, Classification and Regression models.">
+<!-- begin _includes/seo.html --><title>Distance Measures - cuddle-ai</title>
+<meta name="description" content="In this article, we will look into different distance measures we will use in Machine Learning.">
 
 
   <meta name="author" content="Chaitanya Sagar Kuracha">
@@ -22,11 +22,11 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="cuddle-ai">
-<meta property="og:title" content="Classification and Regression">
-<meta property="og:url" content="http://localhost:4000/2021/04/04/Classification-and-regression.html">
+<meta property="og:title" content="Distance Measures">
+<meta property="og:url" content="http://localhost:4000/2021/04/04/Distance-Measures.html">
 
 
-  <meta property="og:description" content="In this article, we will look into two different kinds of Machine learning algorithms, Classification and Regression models.">
+  <meta property="og:description" content="In this article, we will look into different distance measures we will use in Machine Learning.">
 
 
 
@@ -41,7 +41,7 @@
 
 
 
-<link rel="canonical" href="http://localhost:4000/2021/04/04/Classification-and-regression.html">
+<link rel="canonical" href="http://localhost:4000/2021/04/04/Distance-Measures.html">
 
 
 
@@ -267,15 +267,15 @@
 
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Classification and Regression">
-    <meta itemprop="description" content="In this article, we will look into two different kinds of Machine learning algorithms, Classification and Regression models.">
+    <meta itemprop="headline" content="Distance Measures">
+    <meta itemprop="description" content="In this article, we will look into different distance measures we will use in Machine Learning.">
     <meta itemprop="datePublished" content="2021-04-04T00:00:00+05:30">
     
 
     <div class="page__inner-wrap">
       
         <header>
-          <h1 id="page-title" class="page__title" itemprop="headline">Classification and Regression
+          <h1 id="page-title" class="page__title" itemprop="headline">Distance Measures
 </h1>
           
 
@@ -303,49 +303,71 @@
 
       <section class="page__content" itemprop="text">
         
-        <p>In this article, we will look into two different kinds of Machine learning algorithms, Classification and Regression models.</p>
+        <p>In this article, we will look into different distance measures we will use in Machine Learning.</p>
 
-<p>The main objective of Machine learning model is to find a function f, such that when a query point (x_q) is passed thru the function f, it will return desired output (y_q_^)</p>
+<h3 id="1-euclidean-distance-l2">1. Euclidean Distance (L2):</h3>
 
-<h3 id="classification">Classification:</h3>
-
-<p>Lets consider an example for understanding the classification problems. Say, we want to classify reviews in an eCommerce website and typically we need to classify each review as positive review, negative review or neutral review. 
-This type of problem is called Classification problem.</p>
-
-<p>Here when we look closely, we are classifying the datapoints into set of classes like positive, negative, neutral etc.. This kind of technique is called Classification.</p>
-
-<p>We can interpret classification dataset as below:</p>
+<p>Euclidean Distance is most frequently used distance measure.</p>
 
 <blockquote>
-  <p><img src="/assets/images/2021-04-04-Classifiction-and-regression-1.jpg" alt="Classification" /></p>
+  <p><img src="/assets/images/2021-04-04-distance-measures-1.jpg" alt="Graph" /></p>
 </blockquote>
 
-<p>where x is input data and y is the output class.</p>
+<p>If we observe the above picture, variable ‘d’ is called the Euclidean distance (L2). It is called the shortest distance from X1 to X2.</p>
 
-<h3 id="regression">Regression:</h3>
-
-<p>Consider this example for understanding regression problems. Say, we want to predict the heights of students in a school. Here our predicted value is a real number since height is a real number.</p>
-
-<p>We can interpret regression dataset as below:</p>
+<p>In above picture, we have two features, f1 and f2 and two datapoints in 2D, X1 and X2.</p>
 
 <blockquote>
-  <p><img src="/assets/images/2021-04-04-Classifiction-and-regression-2.jpg" alt="Regression" /></p>
+  <p><img src="/assets/images/2021-04-04-distance-measures-3.jpg" alt="Euclidean Measure" /></p>
 </blockquote>
 
-<p>where x is input data and y is a real valued number</p>
+<p>Euclidean distance can be formulated as</p>
 
-<h3 id="did-you-observe-difference-between-classification-and-regression-">Did you observe difference between Classification and Regression ?</h3>
+<blockquote>
+  <p><img src="/assets/images/2021-04-04-distance-measures-2.jpg" alt="Euclidean Measure" /></p>
+</blockquote>
 
-<p>If you observe closely on the dataset interpretations for Classification and Regression,  we can see the difference in the output variable ‘y’.</p>
+<h3 id="2-manhattan-distance-l1">2. Manhattan Distance (L1):</h3>
 
-<p>In Classification, ‘y’ is a finite number where as in Regression, ‘y’ is a real valued number, which is a difference on very high level. We will understand more differences as we go on.</p>
+<p>Manhattan Distance is next frequently used and simple distance measure.</p>
+
+<p>From above graph, Manhattan distance can be formulatted as,</p>
+
+<blockquote>
+  <p><img src="/assets/images/2021-04-04-distance-measures-4.jpg" alt="Manhattan Measure" /></p>
+</blockquote>
+
+<h3 id="3-minkowski-distance-lp">3. Minkowski Distance (LP):</h3>
+
+<p>Minkowski Distance is the generalized distance measure and can be formulated as,</p>
+
+<blockquote>
+  <p><img src="/assets/images/2021-04-04-distance-measures-5.jpg" alt="Minkowski Measure" /></p>
+</blockquote>
+
+<p>When p=1 in Minkowski Distance, it becomes <em>Manhattan Distance</em> and when p=2, it becomes <em>Euclidean distance</em></p>
+
+<p>Manhattan distance is also called as L1-Norm and Euclidean distance is called as L2-Norm</p>
+
+<h3 id="4-hamming-distance">4. Hamming Distance:</h3>
+
+<p>Hamming distance is widely used in text processing and it gives us the # of difference of values between dimensions in vectors.
+Hamming distance will  be used in Gene sequence.</p>
+
+<blockquote>
+  <p><img src="/assets/images/2021-04-04-distance-measures-6.jpg" alt="Hamming Distance" /></p>
+</blockquote>
+
+<p>Above sequence generates value of 2 as there is differencce of values in 7 and 10 dimensions</p>
+
+<p>There are other measures as well and we will understand about few of them in the future. One such important and widely used measure is <em>Cosine Distance</em> and <em>Cosine similarity</em>, we will see this in upcoming articles.</p>
 
 <h3 id="bottomline">Bottomline:</h3>
 
-<p>On simple and very highlevel terms, difference between Classification and Regression comes to difference between finite integer and Real valued number 😃</p>
+<p>There are many distance measures that are used in Machine Learning and few of them are Manhattan distance, Euclidean distance, Minkowski distance and Hamming distance. 
+There are other distance measures also which are widely used and we will see them in future articles.</p>
 
-<p>Hope you like this article and feel free to share your comments.</p>
-
+<p>Hope you like this article and please share your feedback.</p>
 
         
       </section>
@@ -364,23 +386,22 @@ This type of problem is called Classification problem.</p>
       <section class="page__share">
   
 
-  <a href="https://twitter.com/intent/tweet?text=Classification+and+Regression%20http%3A%2F%2Flocalhost%3A4000%2F2021%2F04%2F04%2FClassification-and-regression.html" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=Distance+Measures%20http%3A%2F%2Flocalhost%3A4000%2F2021%2F04%2F04%2FDistance-Measures.html" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F2021%2F04%2F04%2FClassification-and-regression.html" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F2021%2F04%2F04%2FDistance-Measures.html" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2F2021%2F04%2F04%2FClassification-and-regression.html" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2F2021%2F04%2F04%2FDistance-Measures.html" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
       
   <nav class="pagination">
     
-      <a href="/2021/04/03/techniques-to-convert-words-to-vectors.html" class="pagination--pager" title="Different techniques to convert words to vectors
+      <a href="/2021/04/04/Classification-and-regression.html" class="pagination--pager" title="Classification and Regression
 ">Previous</a>
     
     
-      <a href="/2021/04/04/Distance-Measures.html" class="pagination--pager" title="Distance Measures
-">Next</a>
+      <a href="#" class="pagination--pager disabled">Next</a>
     
   </nav>
 
@@ -404,7 +425,7 @@ This type of problem is called Classification problem.</p>
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/2021/04/04/Distance-Measures.html" rel="permalink">Distance Measures
+        <a href="/2021/04/04/Classification-and-regression.html" rel="permalink">Classification and Regression
 </a>
       
     </h2>
@@ -429,7 +450,7 @@ This type of problem is called Classification problem.</p>
   </p>
 
 
-    <p class="archive__item-excerpt" itemprop="description">In this article, we will look into different distance measures we will use in Machine Learning.
+    <p class="archive__item-excerpt" itemprop="description">In this article, we will look into two different kinds of Machine learning algorithms, Classification and Regression models.
 
 </p>
   </article>

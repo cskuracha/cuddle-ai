@@ -16,4 +16,10 @@ var store = [{
         "tags": [],
         "url": "/2021/04/04/Classification-and-regression.html",
         "teaser": null
+      },{
+        "title": "Distance Measures",
+        "excerpt":"In this article, we will look into different distance measures we will use in Machine Learning. 1. Euclidean Distance (L2): Euclidean Distance is most frequently used distance measure. If we observe the above picture, variable ‘d’ is called the Euclidean distance (L2). It is called the shortest distance from X1...","categories": [],
+        "tags": [],
+        "url": "/2021/04/04/Distance-Measures.html",
+        "teaser": null
       }]
