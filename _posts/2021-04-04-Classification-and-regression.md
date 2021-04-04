@@ -15,7 +15,7 @@ Here when we look closely, we are classifying the datapoints into set of classes
 
 We can interpret classification dataset as below:
 
-> ![Classification](/assets/images/2021-04-04-Classifiction-and-regression-1.jpg)
+> ![Classification]({{"/assets/images/2021-04-04-Classifiction-and-regression-1.jpg" | relative_url}})
 
 where x is input data and y is the output class.
 
@@ -25,7 +25,7 @@ Consider this example for understanding regression problems. Say, we want to pre
 
 We can interpret regression dataset as below:
 
-> ![Regression](/assets/images/2021-04-04-Classifiction-and-regression-2.jpg)
+> ![Regression]({{"/assets/images/2021-04-04-Classifiction-and-regression-2.jpg" | relative_url}})
 
 where x is input data and y is a real valued number
 
@@ -40,3 +40,5 @@ In Classification, 'y' is a finite number where as in Regression, 'y' is a real 
 On simple and very highlevel terms, difference between Classification and Regression comes to difference between finite integer and Real valued number 😃
 
 Hope you like this article and feel free to share your comments.
+
+
