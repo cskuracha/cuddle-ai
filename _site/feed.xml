@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-04-04T12:04:03+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">cuddle-ai</title><entry><title type="html">Techniques To Convert Words To Vectors</title><link href="http://localhost:4000/2021/04/03/techniques-to-convert-words-to-vectors.html" rel="alternate" type="text/html" title="Techniques To Convert Words To Vectors" /><published>2021-04-03T00:00:00+05:30</published><updated>2021-04-03T00:00:00+05:30</updated><id>http://localhost:4000/2021/04/03/techniques-to-convert-words-to-vectors</id><content type="html" xml:base="http://localhost:4000/2021/04/03/techniques-to-convert-words-to-vectors.html">&lt;h2 id=&quot;different-techniques-to-convert-words-to-vectors&quot;&gt;Different techniques to convert words to vectors&lt;/h2&gt;
-
-&lt;p&gt;In Machine Learning, we want to convert words into vectors to fully utilize the mathematical functions for the model.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-04-04T13:38:01+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">cuddle-ai</title><author><name>Chaitanya Sagar Kuracha</name></author><entry><title type="html">Different techniques to convert words to vectors</title><link href="http://localhost:4000/2021/04/03/techniques-to-convert-words-to-vectors.html" rel="alternate" type="text/html" title="Different techniques to convert words to vectors" /><published>2021-04-03T00:00:00+05:30</published><updated>2021-04-03T00:00:00+05:30</updated><id>http://localhost:4000/2021/04/03/techniques-to-convert-words-to-vectors</id><content type="html" xml:base="http://localhost:4000/2021/04/03/techniques-to-convert-words-to-vectors.html">&lt;p&gt;In Machine Learning, we want to convert words into vectors to fully utilize the mathematical functions for the model.&lt;/p&gt;
 
 &lt;p&gt;There are various techniques using which we can convert words into vectors. We will look into those techniques in this article.&lt;/p&gt;
 
@@ -43,13 +41,19 @@
 
 &lt;p&gt;Here we have 18 unique words in the bag, so we will represent each of the sentense in a vector of length 18.&lt;/p&gt;
 
-&lt;p&gt;Representation of sentence 1 -&amp;gt; This headphone is amazing -&amp;gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;[1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0]&lt;/code&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Representation of sentence 1 -&amp;gt; This headphone is amazing -&amp;gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;[1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0]&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;p&gt;Similarly other sentences can be represented as,&lt;/p&gt;
 
-&lt;p&gt;Noise Cancelling in this headphone is really awesome -&amp;gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;[1,1,1,0,1,1,1,1,1,0,0,0,0,0,0,0,0,0]&lt;/code&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Noise Cancelling in this headphone is really awesome -&amp;gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;[1,1,1,0,1,1,1,1,1,0,0,0,0,0,0,0,0,0]&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 
-&lt;p&gt;This headphone is not good -&amp;gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;[1,1,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0]&lt;/code&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;This headphone is not good -&amp;gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;[1,1,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0]&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;p&gt;Same is repeated for other sentence&lt;/p&gt;
 
@@ -96,4 +100,4 @@ Word2Vec learns the vectors from large document corpus.&lt;/p&gt;
 
 &lt;p&gt;Using above techniques, we can convert words into vectors on which we can apply transformation that are useful for machine learning.&lt;/p&gt;
 
-&lt;p&gt;I will try to create blog for each of the techniques more elaborately.&lt;/p&gt;</content><author><name></name></author><summary type="html">Different techniques to convert words to vectors</summary></entry><entry><title type="html">Test Post</title><link href="http://localhost:4000/2021/04/03/Test-Post.html" rel="alternate" type="text/html" title="Test Post" /><published>2021-04-03T00:00:00+05:30</published><updated>2021-04-03T00:00:00+05:30</updated><id>http://localhost:4000/2021/04/03/Test-Post</id><content type="html" xml:base="http://localhost:4000/2021/04/03/Test-Post.html">&lt;p&gt;This is a Test Page&lt;/p&gt;</content><author><name></name></author><summary type="html">This is a Test Page</summary></entry></feed>
+&lt;p&gt;I will try to create blog for each of the techniques more elaborately.&lt;/p&gt;</content><author><name>Chaitanya Sagar Kuracha</name></author><summary type="html">In Machine Learning, we want to convert words into vectors to fully utilize the mathematical functions for the model.</summary></entry><entry><title type="html">Test Post</title><link href="http://localhost:4000/2021/04/03/Test-Post.html" rel="alternate" type="text/html" title="Test Post" /><published>2021-04-03T00:00:00+05:30</published><updated>2021-04-03T00:00:00+05:30</updated><id>http://localhost:4000/2021/04/03/Test-Post</id><content type="html" xml:base="http://localhost:4000/2021/04/03/Test-Post.html">&lt;p&gt;This is a Test Page&lt;/p&gt;</content><author><name>Chaitanya Sagar Kuracha</name></author><summary type="html">This is a Test Page</summary></entry></feed>

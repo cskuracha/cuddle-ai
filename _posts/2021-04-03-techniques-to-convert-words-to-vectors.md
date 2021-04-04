@@ -1,8 +1,8 @@
 ---
-layout: splash
+layout: categories
+classes: dark-theme
+title: Different techniques to convert words to vectors
 ---
-## Different techniques to convert words to vectors
-
 
 In Machine Learning, we want to convert words into vectors to fully utilize the mathematical functions for the model.
 
@@ -38,13 +38,13 @@ From our above example, our Bag of unique words contains:
 
 Here we have 18 unique words in the bag, so we will represent each of the sentense in a vector of length 18. 
 
-Representation of sentence 1 -> This headphone is amazing -> ```[1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0]``` 
+> Representation of sentence 1 -> This headphone is amazing -> ```[1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0]``` 
 
 Similarly other sentences can be represented as,
 
-Noise Cancelling in this headphone is really awesome -> ```[1,1,1,0,1,1,1,1,1,0,0,0,0,0,0,0,0,0]```
+> Noise Cancelling in this headphone is really awesome -> ```[1,1,1,0,1,1,1,1,1,0,0,0,0,0,0,0,0,0]```
 
-This headphone is not good -> ```[1,1,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0]```
+> This headphone is not good -> ```[1,1,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0]```
 
 Same is repeated for other sentence
 
