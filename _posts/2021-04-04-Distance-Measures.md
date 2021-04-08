@@ -25,7 +25,7 @@ Euclidean distance can be formulated as
 
 Manhattan Distance is next frequently used and simple distance measure.
 
-From above graph, Manhattan distance can be formulatted as,
+From above graph, Manhattan distance can be formulated as,
 
 > ![Manhattan Measure]({{"/assets/images/2021-04-04-distance-measures-4.jpg" | relative_url}})
 
@@ -46,7 +46,7 @@ Hamming distance will  be used in Gene sequence.
 
 > ![Hamming Distance]({{"/assets/images/2021-04-04-distance-measures-6.jpg" | relative_url}})
 
-Above sequence generates value of 2 as there is differencce of values in 7 and 10 dimensions
+Above sequence generates value of 2 as there is difference of values in 7 and 10 dimensions
 
 
 There are other measures as well and we will understand about few of them in the future. One such important and widely used measure is *Cosine Distance* and *Cosine similarity*, we will see this in upcoming articles.

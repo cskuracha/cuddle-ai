@@ -22,4 +22,10 @@ var store = [{
         "tags": [],
         "url": "/2021/04/04/Distance-Measures.html",
         "teaser": null
+      },{
+        "title": "Neural Networks - History",
+        "excerpt":"In this article, I want to give brief introduction to Neural Networks. First Neural Network was designed by Frank Rosenblatt in 1957 and is called perceptron. Concept is loosely inspired from Biological neurons. Concepts of Neural networks are loosely inspired from Biological neurons (Biological neurons are more complicated). (Image from...","categories": [],
+        "tags": [],
+        "url": "/2021/04/08/Neural-Networks-History.html",
+        "teaser": null
       }]
