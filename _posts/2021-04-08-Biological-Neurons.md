@@ -6,14 +6,14 @@ In this article, we will look into how Biological Neurons work and how it is dif
 
 > ![Neuron]({{"/assets/images/2021-04-08-Biological-Neurons-1.jpg" | relative_url}} )
 
-When we observe a single neuron, some dendrites will be of more thinkness than other dendrites. This allows to pass more impules to nucleus than other dendrites.
-Once we have enough impules from dendrites then neurons sends the output to axioms, else neurons will not be activated.
+When we observe a single neuron, some dendrites will be of more thickness than other dendrites. This allows to pass more impulses to nucleus than other dendrites.
+Once we have enough impulses from dendrites then neurons sends the output to axioms, else neurons will not be activated.
 
-Also, if we observe the scans of kids from newborn to 6 years, we see the connections betweens nerons is increasing and becoming dense upto 2 years. After 2 years connections are pruning. 
+Also, if we observe the scans of kids from newborn to 6 years, we see the connections between neurons is increasing and becoming dense upto 2 years. After 2 years connections are pruning. 
 
 > ![image](https://cdn.filestackcontent.com/rotate=deg:exif/resize=width:1148,height:500,fit:crop/FI20xFeyTKuwS5mQoR9g)
 
-Kids start learning about language , shapes, objects etc., durning early age and build the neurons. After some age, these neurons starts pruning as few of the neurons (experience) will be redundant or random connections. Also, when we observe the dendrites, we can see that few dendrites are more think than others. Dendrites with more thickness will give more impules than the less thick ones.
+Kids start learning about language , shapes, objects etc., durning early age and build the neurons. After some age, these neurons starts pruning as few of the neurons (experience) will be redundant or random connections. Also, when we observe the dendrites, we can see that few dendrites are more think than others. Dendrites with more thickness will give more impulses than the less thick ones.
 
 Durning the initial years, kids consume lots of data like visual data, audio, sensory data etc., Since child consumes lots of data, our biological algorithm creates new connections based on the data that child has consumed. Kids born on different countries, conditions or circumstances will have different neuron connections. For example, a kid born in India and Canada will have different connections established because of their language / culture / parents etc.,
 
