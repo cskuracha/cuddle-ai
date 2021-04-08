@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-04-08T21:00:15+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">cuddle-ai</title><author><name>Chaitanya Sagar Kuracha</name></author><entry><title type="html">Neural Networks - History</title><link href="http://localhost:4000/2021/04/08/Neural-Networks-History.html" rel="alternate" type="text/html" title="Neural Networks - History" /><published>2021-04-08T00:00:00+05:30</published><updated>2021-04-08T00:00:00+05:30</updated><id>http://localhost:4000/2021/04/08/Neural-Networks-History</id><content type="html" xml:base="http://localhost:4000/2021/04/08/Neural-Networks-History.html">&lt;p&gt;In this article, I want to give brief introduction to Neural Networks.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-04-08T23:30:25+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">cuddle-ai</title><author><name>Chaitanya Sagar Kuracha</name></author><entry><title type="html">Neural Networks - History</title><link href="http://localhost:4000/2021/04/08/Neural-Networks-History.html" rel="alternate" type="text/html" title="Neural Networks - History" /><published>2021-04-08T00:00:00+05:30</published><updated>2021-04-08T00:00:00+05:30</updated><id>http://localhost:4000/2021/04/08/Neural-Networks-History</id><content type="html" xml:base="http://localhost:4000/2021/04/08/Neural-Networks-History.html">&lt;p&gt;In this article, I want to give brief introduction to Neural Networks.&lt;/p&gt;
 
 &lt;p&gt;First Neural Network was designed by Frank Rosenblatt in 1957 and is called perceptron. Concept is loosely inspired from Biological neurons.&lt;/p&gt;
 
@@ -31,7 +31,45 @@
 
 &lt;p&gt;Today artificial neural networks are applied in different Voice assistants, Self driving cars etc.,&lt;/p&gt;
 
-&lt;p&gt;Hope you like this article and please share your feedback.&lt;/p&gt;</content><author><name>Chaitanya Sagar Kuracha</name></author><summary type="html">In this article, I want to give brief introduction to Neural Networks.</summary></entry><entry><title type="html">Distance Measures</title><link href="http://localhost:4000/2021/04/04/Distance-Measures.html" rel="alternate" type="text/html" title="Distance Measures" /><published>2021-04-04T00:00:00+05:30</published><updated>2021-04-04T00:00:00+05:30</updated><id>http://localhost:4000/2021/04/04/Distance-Measures</id><content type="html" xml:base="http://localhost:4000/2021/04/04/Distance-Measures.html">&lt;p&gt;In this article, we will look into different distance measures we will use in Machine Learning.&lt;/p&gt;
+&lt;p&gt;Hope you like this article and please share your feedback.&lt;/p&gt;</content><author><name>Chaitanya Sagar Kuracha</name></author><summary type="html">In this article, I want to give brief introduction to Neural Networks.</summary></entry><entry><title type="html">Biological Neurons</title><link href="http://localhost:4000/2021/04/08/Biological-Neurons.html" rel="alternate" type="text/html" title="Biological Neurons" /><published>2021-04-08T00:00:00+05:30</published><updated>2021-04-08T00:00:00+05:30</updated><id>http://localhost:4000/2021/04/08/Biological-Neurons</id><content type="html" xml:base="http://localhost:4000/2021/04/08/Biological-Neurons.html">&lt;p&gt;In this article, we will look into how Biological Neurons work and how it is different from Artificial Neurons&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;img src=&quot;/assets/images/2021-04-08-Biological-Neurons-1.jpg&quot; alt=&quot;Neuron&quot; /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;When we observe a single neuron, some dendrites will be of more thinkness than other dendrites. This allows to pass more impules to nucleus than other dendrites.
+Once we have enough impules from dendrites then neurons sends the output to axioms, else neurons will not be activated.&lt;/p&gt;
+
+&lt;p&gt;Also, if we observe the scans of kids from newborn to 6 years, we see the connections betweens nerons is increasing and becoming dense upto 2 years. After 2 years connections are pruning.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;img src=&quot;https://cdn.filestackcontent.com/rotate=deg:exif/resize=width:1148,height:500,fit:crop/FI20xFeyTKuwS5mQoR9g&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Kids start learning about language , shapes, objects etc., durning early age and build the neurons. After some age, these neurons starts pruning as few of the neurons (experience) will be redundant or random connections. Also, when we observe the dendrites, we can see that few dendrites are more think than others. Dendrites with more thickness will give more impules than the less thick ones.&lt;/p&gt;
+
+&lt;p&gt;Durning the initial years, kids consume lots of data like visual data, audio, sensory data etc., Since child consumes lots of data, our biological algorithm creates new connections based on the data that child has consumed. Kids born on different countries, conditions or circumstances will have different neuron connections. For example, a kid born in India and Canada will have different connections established because of their language / culture / parents etc.,&lt;/p&gt;
+
+&lt;h4 id=&quot;how-thickness-of-connections-are-formed&quot;&gt;How thickness of connections are formed?&lt;/h4&gt;
+
+&lt;p&gt;When a kid touches a hot object, it gives child a pain and forms a strong neural connection, so that when there is a hot object near to kid, it gives a strong signal that dont touch the object. 
+Similarly, when a kid is born in Canada, he knows how snow looks and feels but kid born in India dont have that connection available.&lt;/p&gt;
+
+&lt;p&gt;We can write activation function as,&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;img src=&quot;/assets/images/2021-04-08-Biological-Neurons-2.jpg&quot; alt=&quot;Neuron&quot; /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This function is similar to Logistic Regression&lt;/p&gt;
+
+&lt;p&gt;When there is no connection between neurons, then weight of that connection is 0&lt;/p&gt;
+
+&lt;h4 id=&quot;bottomline&quot;&gt;Bottomline:&lt;/h4&gt;
+
+&lt;p&gt;When we learn a new thing, a new connection will be formed between set of neurons and weights / thickness will be established.&lt;/p&gt;
+
+&lt;p&gt;Hope you like this article and please share your feedback.&lt;/p&gt;</content><author><name>Chaitanya Sagar Kuracha</name></author><summary type="html">In this article, we will look into how Biological Neurons work and how it is different from Artificial Neurons</summary></entry><entry><title type="html">Distance Measures</title><link href="http://localhost:4000/2021/04/04/Distance-Measures.html" rel="alternate" type="text/html" title="Distance Measures" /><published>2021-04-04T00:00:00+05:30</published><updated>2021-04-04T00:00:00+05:30</updated><id>http://localhost:4000/2021/04/04/Distance-Measures</id><content type="html" xml:base="http://localhost:4000/2021/04/04/Distance-Measures.html">&lt;p&gt;In this article, we will look into different distance measures we will use in Machine Learning.&lt;/p&gt;
 
 &lt;h3 id=&quot;1-euclidean-distance-l2&quot;&gt;1. Euclidean Distance (L2):&lt;/h3&gt;
 

@@ -9,8 +9,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Neural Networks - History - cuddle-ai</title>
-<meta name="description" content="In this article, I want to give brief introduction to Neural Networks.">
+<!-- begin _includes/seo.html --><title>Biological Neurons - cuddle-ai</title>
+<meta name="description" content="In this article, we will look into how Biological Neurons work and how it is different from Artificial Neurons">
 
 
   <meta name="author" content="Chaitanya Sagar Kuracha">
@@ -22,11 +22,11 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="cuddle-ai">
-<meta property="og:title" content="Neural Networks - History">
-<meta property="og:url" content="http://localhost:4000/2021/04/08/Neural-Networks-History.html">
+<meta property="og:title" content="Biological Neurons">
+<meta property="og:url" content="http://localhost:4000/2021/04/08/Biological-Neurons.html">
 
 
-  <meta property="og:description" content="In this article, I want to give brief introduction to Neural Networks.">
+  <meta property="og:description" content="In this article, we will look into how Biological Neurons work and how it is different from Artificial Neurons">
 
 
 
@@ -41,7 +41,7 @@
 
 
 
-<link rel="canonical" href="http://localhost:4000/2021/04/08/Neural-Networks-History.html">
+<link rel="canonical" href="http://localhost:4000/2021/04/08/Biological-Neurons.html">
 
 
 
@@ -267,15 +267,15 @@
 
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Neural Networks - History">
-    <meta itemprop="description" content="In this article, I want to give brief introduction to Neural Networks.">
+    <meta itemprop="headline" content="Biological Neurons">
+    <meta itemprop="description" content="In this article, we will look into how Biological Neurons work and how it is different from Artificial Neurons">
     <meta itemprop="datePublished" content="2021-04-08T00:00:00+05:30">
     
 
     <div class="page__inner-wrap">
       
         <header>
-          <h1 id="page-title" class="page__title" itemprop="headline">Neural Networks - History
+          <h1 id="page-title" class="page__title" itemprop="headline">Biological Neurons
 </h1>
           
 
@@ -303,40 +303,46 @@
 
       <section class="page__content" itemprop="text">
         
-        <p>In this article, I want to give brief introduction to Neural Networks.</p>
-
-<p>First Neural Network was designed by Frank Rosenblatt in 1957 and is called perceptron. Concept is loosely inspired from Biological neurons.</p>
-
-<p>Concepts of Neural networks are loosely inspired from Biological neurons (Biological neurons are more complicated).</p>
+        <p>In this article, we will look into how Biological Neurons work and how it is different from Artificial Neurons</p>
 
 <blockquote>
-  <p><img src="/assets/images/2021-04-08-Neural-Networks-History-1_1.jpg" alt="Neuron" /></p>
+  <p><img src="/assets/images/2021-04-08-Biological-Neurons-1.jpg" alt="Neuron" /></p>
 </blockquote>
 
-<p>(Image from https://en.wikipedia.org/wiki/Artificial_neuron#/media/File:Neuron3.svg)</p>
+<p>When we observe a single neuron, some dendrites will be of more thinkness than other dendrites. This allows to pass more impules to nucleus than other dendrites.
+Once we have enough impules from dendrites then neurons sends the output to axioms, else neurons will not be activated.</p>
 
-<p>On highlevel, neurons contains three parts,</p>
-<ol>
-  <li>Dendrites  -&gt; Dendrites collects the impulses. Size and Width of Dendrites, determine the strength of impulse</li>
-  <li>Cell body (nucleus) -&gt; Nucleus collect the impulses from all the Dendrites and process information</li>
-  <li>Axoms -&gt; Axioms will send the information to other neurons</li>
-</ol>
-
-<p>Biological neurons cannot exist on their own but exists in networks. Output of one neuron connects to dendrites of other neurons and forms the networks</p>
+<p>Also, if we observe the scans of kids from newborn to 6 years, we see the connections betweens nerons is increasing and becoming dense upto 2 years. After 2 years connections are pruning.</p>
 
 <blockquote>
-  <p><img src="/assets/images/2021-04-08-Neural-Networks-History-1_2.png" alt="Neural Neuron" /></p>
+  <p><img src="https://cdn.filestackcontent.com/rotate=deg:exif/resize=width:1148,height:500,fit:crop/FI20xFeyTKuwS5mQoR9g" alt="image" /></p>
 </blockquote>
 
-<p>In Artificial Neural networks, we will pass inputs, x1, x2, x3,… xn with w1, w2, w3, … wn as corresponding weights to the neurons. These inputs and weights are weighted and summed and passed thru activating function. This function process the data and send the output.</p>
+<p>Kids start learning about language , shapes, objects etc., durning early age and build the neurons. After some age, these neurons starts pruning as few of the neurons (experience) will be redundant or random connections. Also, when we observe the dendrites, we can see that few dendrites are more think than others. Dendrites with more thickness will give more impules than the less thick ones.</p>
 
-<p>In 1986, Hilton and others submitted work on how to train Artificial neural networks and is called as Back Propagation algorithm. During this time, neural networks failed when number of hidden layers (between input and output layers) are more.</p>
+<p>Durning the initial years, kids consume lots of data like visual data, audio, sensory data etc., Since child consumes lots of data, our biological algorithm creates new connections based on the data that child has consumed. Kids born on different countries, conditions or circumstances will have different neuron connections. For example, a kid born in India and Canada will have different connections established because of their language / culture / parents etc.,</p>
 
-<p>Neural Networks gained popularity again in 2012 with ImageNet competition.</p>
+<h4 id="how-thickness-of-connections-are-formed">How thickness of connections are formed?</h4>
 
-<p>Today artificial neural networks are applied in different Voice assistants, Self driving cars etc.,</p>
+<p>When a kid touches a hot object, it gives child a pain and forms a strong neural connection, so that when there is a hot object near to kid, it gives a strong signal that dont touch the object. 
+Similarly, when a kid is born in Canada, he knows how snow looks and feels but kid born in India dont have that connection available.</p>
+
+<p>We can write activation function as,</p>
+
+<blockquote>
+  <p><img src="/assets/images/2021-04-08-Biological-Neurons-2.jpg" alt="Neuron" /></p>
+</blockquote>
+
+<p>This function is similar to Logistic Regression</p>
+
+<p>When there is no connection between neurons, then weight of that connection is 0</p>
+
+<h4 id="bottomline">Bottomline:</h4>
+
+<p>When we learn a new thing, a new connection will be formed between set of neurons and weights / thickness will be established.</p>
 
 <p>Hope you like this article and please share your feedback.</p>
+
 
         
       </section>
@@ -355,22 +361,23 @@
       <section class="page__share">
   
 
-  <a href="https://twitter.com/intent/tweet?text=Neural+Networks+-+History%20http%3A%2F%2Flocalhost%3A4000%2F2021%2F04%2F08%2FNeural-Networks-History.html" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=Biological+Neurons%20http%3A%2F%2Flocalhost%3A4000%2F2021%2F04%2F08%2FBiological-Neurons.html" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F2021%2F04%2F08%2FNeural-Networks-History.html" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F2021%2F04%2F08%2FBiological-Neurons.html" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2F2021%2F04%2F08%2FNeural-Networks-History.html" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2F2021%2F04%2F08%2FBiological-Neurons.html" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
       
   <nav class="pagination">
     
-      <a href="/2021/04/08/Biological-Neurons.html" class="pagination--pager" title="Biological Neurons
+      <a href="/2021/04/04/Distance-Measures.html" class="pagination--pager" title="Distance Measures
 ">Previous</a>
     
     
-      <a href="#" class="pagination--pager disabled">Next</a>
+      <a href="/2021/04/08/Neural-Networks-History.html" class="pagination--pager" title="Neural Networks - History
+">Next</a>
     
   </nav>
 
@@ -394,7 +401,7 @@
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/2021/04/08/Biological-Neurons.html" rel="permalink">Biological Neurons
+        <a href="/2021/04/08/Neural-Networks-History.html" rel="permalink">Neural Networks - History
 </a>
       
     </h2>
@@ -419,7 +426,7 @@
   </p>
 
 
-    <p class="archive__item-excerpt" itemprop="description">In this article, we will look into how Biological Neurons work and how it is different from Artificial Neurons
+    <p class="archive__item-excerpt" itemprop="description">In this article, I want to give brief introduction to Neural Networks.
 
 </p>
   </article>
