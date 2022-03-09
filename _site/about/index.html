@@ -1,6 +1,6 @@
 <!doctype html>
 <!--
-  Minimal Mistakes Jekyll Theme 4.22.0 by Michael Rose
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
   Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
   Free for personal and commercial use under the MIT license
   https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
@@ -56,6 +56,7 @@
 
 
 
+
 <!-- end _includes/seo.html -->
 
 
@@ -72,22 +73,9 @@
 
 <!-- For all browsers -->
 <link rel="stylesheet" href="/assets/css/main.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
 
-<!--[if IE]>
-  <style>
-    /* old IE unsupported flexbox fixes */
-    .greedy-nav .site-title {
-      padding-right: 3em;
-    }
-    .greedy-nav button {
-      position: absolute;
-      top: 0;
-      right: 0;
-      height: 100%;
-    }
-  </style>
-<![endif]-->
 
 
     <!-- start custom head snippets -->
@@ -100,7 +88,6 @@
 
   <body class="layout--single">
     <nav class="skip-links">
-  <h2 class="screen-reader-text">Skip links</h2>
   <ul>
     <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
     <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
@@ -149,22 +136,22 @@
   
 
 
-<div itemscope itemtype="https://schema.org/Person">
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
 
   
     <div class="author__avatar">
-      
-        <img src="/assets/images/IMG_0608.jpg" alt="Chaitanya Sagar Kuracha" itemprop="image">
-      
+      <a href="http://localhost:4000/">
+        <img src="/assets/images/IMG_0608.jpg" alt="Chaitanya Sagar Kuracha" itemprop="image" class="u-photo">
+      </a>
     </div>
   
 
   <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="http://localhost:4000/" itemprop="url">Chaitanya Sagar Kuracha</a>
+    </h3>
     
-      <h3 class="author__name" itemprop="name">Chaitanya Sagar Kuracha</h3>
-    
-    
-      <div class="author__bio" itemprop="description">
+      <div class="author__bio p-note" itemprop="description">
         <p>I am passionate about learning new things and want to explore different areas</p>
 
       </div>
@@ -176,22 +163,22 @@
     <ul class="author__urls social-icons">
       
         <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
-          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">Hyderabad</span>
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name" class="p-locality">Hyderabad</span>
         </li>
       
 
       
         
           
-            <li><a href="mailto:cskuracha@gmail.com" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
+            <li><a href="mailto:cskuracha@gmail.com" rel="nofollow noopener noreferrer me"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
           
         
           
-            <li><a href="https://twitter.com/CSK_Chaitanya" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i><span class="label">Twitter</span></a></li>
+            <li><a href="https://twitter.com/CSK_Chaitanya" rel="nofollow noopener noreferrer me"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i><span class="label">Twitter</span></a></li>
           
         
           
-            <li><a href="https://github.com/cskuracha" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+            <li><a href="https://github.com/cskuracha" rel="nofollow noopener noreferrer me"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
           
         
       
@@ -246,7 +233,7 @@
 
       <!--
   <li>
-    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
       <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
     </a>
   </li>
@@ -254,13 +241,12 @@
     </ul>
   </div>
 </div>
-
   
   </div>
 
 
 
-  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
     
     
     
@@ -276,7 +262,7 @@
         </header>
       
 
-      <section class="page__content" itemprop="text">
+      <section class="page__content e-content" itemprop="text">
         
         <p>This is Chaitanya Sagar Kuracha. I am passionate about learning new things and want to explore different areas.</p>
 
@@ -305,7 +291,6 @@
   
   
 </div>
-
     </div>
 
     
@@ -327,7 +312,7 @@
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; 2021 cuddle-ai. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2022 cuddle-ai. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
 
       </footer>
     </div>

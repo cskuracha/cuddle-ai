@@ -24,7 +24,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Biological Neurons",
-        "excerpt":"In this article, we will look into how Biological Neurons work and how it is different from Artificial Neurons When we observe a single neuron, some dendrites will be of more thinkness than other dendrites. This allows to pass more impules to nucleus than other dendrites. Once we have enough...","categories": [],
+        "excerpt":"In this article, we will look into how Biological Neurons work and how it is different from Artificial Neurons When we observe a single neuron, some dendrites will be of more thickness than other dendrites. This allows to pass more impulses to nucleus than other dendrites. Once we have enough...","categories": [],
         "tags": [],
         "url": "/2021/04/08/Biological-Neurons.html",
         "teaser": null
@@ -33,5 +33,11 @@ var store = [{
         "excerpt":"In this article, I want to give brief introduction to Neural Networks. First Neural Network was designed by Frank Rosenblatt in 1957 and is called perceptron. Concept is loosely inspired from Biological neurons. Concepts of Neural networks are loosely inspired from Biological neurons (Biological neurons are more complicated). (Image from...","categories": [],
         "tags": [],
         "url": "/2021/04/08/Neural-Networks-History.html",
+        "teaser": null
+      },{
+        "title": "Biological Neurons",
+        "excerpt":"In this article, we will try to lean about creating virtual environment in Python. ** Creating Virtual Environment ** Creating a virtual environment in Python is easy task. Before creating a virtual environment, make sure pip is installed and updated. pip install virtualenv * Use below command in Command Prompt...","categories": [],
+        "tags": [],
+        "url": "/2022/03/10/Creating-Python-Environment.html",
         "teaser": null
       }]
