@@ -1,4 +1,35 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-04-08T23:30:25+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">cuddle-ai</title><author><name>Chaitanya Sagar Kuracha</name></author><entry><title type="html">Neural Networks - History</title><link href="http://localhost:4000/2021/04/08/Neural-Networks-History.html" rel="alternate" type="text/html" title="Neural Networks - History" /><published>2021-04-08T00:00:00+05:30</published><updated>2021-04-08T00:00:00+05:30</updated><id>http://localhost:4000/2021/04/08/Neural-Networks-History</id><content type="html" xml:base="http://localhost:4000/2021/04/08/Neural-Networks-History.html">&lt;p&gt;In this article, I want to give brief introduction to Neural Networks.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-03-10T00:39:02+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">cuddle-ai</title><author><name>Chaitanya Sagar Kuracha</name></author><entry><title type="html">Biological Neurons</title><link href="http://localhost:4000/2022/03/10/Creating-Python-Environment.html" rel="alternate" type="text/html" title="Biological Neurons" /><published>2022-03-10T00:00:00+05:30</published><updated>2022-03-10T00:00:00+05:30</updated><id>http://localhost:4000/2022/03/10/Creating-Python-Environment</id><content type="html" xml:base="http://localhost:4000/2022/03/10/Creating-Python-Environment.html">&lt;p&gt;In this article, we will try to lean about creating virtual environment in Python.
+** Creating Virtual Environment **
+Creating a virtual environment in Python is easy task. Before creating a virtual environment, make sure pip is installed and updated.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;pip install virtualenv *&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Use below command in Command Prompt to create the virtual environment:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;virtualenv &lt;Name of=&quot;&quot; the=&quot;&quot; virtual=&quot;&quot; environment=&quot;&quot;&gt; *&lt;/Name&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Once the environment is created, make sure environment is activated. To activate the virtual environment, use below command:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;Path to=&quot;&quot; virtual=&quot;&quot; environment=&quot;&quot;&gt;/Scripts/Activate *
+
+&lt;/Path&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To deactivate the virtual environment, use below command:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;Path to=&quot;&quot; virtual=&quot;&quot; environment=&quot;&quot;&gt;/Scripts/Deactivate *
+
+&lt;/Path&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To check the version of Python, use below command:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;python –version *&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Chaitanya Sagar Kuracha</name></author><summary type="html">In this article, we will try to lean about creating virtual environment in Python. ** Creating Virtual Environment ** Creating a virtual environment in Python is easy task. Before creating a virtual environment, make sure pip is installed and updated. pip install virtualenv *</summary></entry><entry><title type="html">Neural Networks - History</title><link href="http://localhost:4000/2021/04/08/Neural-Networks-History.html" rel="alternate" type="text/html" title="Neural Networks - History" /><published>2021-04-08T00:00:00+05:30</published><updated>2021-04-08T00:00:00+05:30</updated><id>http://localhost:4000/2021/04/08/Neural-Networks-History</id><content type="html" xml:base="http://localhost:4000/2021/04/08/Neural-Networks-History.html">&lt;p&gt;In this article, I want to give brief introduction to Neural Networks.&lt;/p&gt;
 
 &lt;p&gt;First Neural Network was designed by Frank Rosenblatt in 1957 and is called perceptron. Concept is loosely inspired from Biological neurons.&lt;/p&gt;
 
@@ -37,16 +68,16 @@
   &lt;p&gt;&lt;img src=&quot;/assets/images/2021-04-08-Biological-Neurons-1.jpg&quot; alt=&quot;Neuron&quot; /&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;When we observe a single neuron, some dendrites will be of more thinkness than other dendrites. This allows to pass more impules to nucleus than other dendrites.
-Once we have enough impules from dendrites then neurons sends the output to axioms, else neurons will not be activated.&lt;/p&gt;
+&lt;p&gt;When we observe a single neuron, some dendrites will be of more thickness than other dendrites. This allows to pass more impulses to nucleus than other dendrites.
+Once we have enough impulses from dendrites then neurons sends the output to axioms, else neurons will not be activated.&lt;/p&gt;
 
-&lt;p&gt;Also, if we observe the scans of kids from newborn to 6 years, we see the connections betweens nerons is increasing and becoming dense upto 2 years. After 2 years connections are pruning.&lt;/p&gt;
+&lt;p&gt;Also, if we observe the scans of kids from newborn to 6 years, we see the connections between neurons is increasing and becoming dense upto 2 years. After 2 years connections are pruning.&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;&lt;img src=&quot;https://cdn.filestackcontent.com/rotate=deg:exif/resize=width:1148,height:500,fit:crop/FI20xFeyTKuwS5mQoR9g&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;Kids start learning about language , shapes, objects etc., durning early age and build the neurons. After some age, these neurons starts pruning as few of the neurons (experience) will be redundant or random connections. Also, when we observe the dendrites, we can see that few dendrites are more think than others. Dendrites with more thickness will give more impules than the less thick ones.&lt;/p&gt;
+&lt;p&gt;Kids start learning about language , shapes, objects etc., durning early age and build the neurons. After some age, these neurons starts pruning as few of the neurons (experience) will be redundant or random connections. Also, when we observe the dendrites, we can see that few dendrites are more think than others. Dendrites with more thickness will give more impulses than the less thick ones.&lt;/p&gt;
 
 &lt;p&gt;Durning the initial years, kids consume lots of data like visual data, audio, sensory data etc., Since child consumes lots of data, our biological algorithm creates new connections based on the data that child has consumed. Kids born on different countries, conditions or circumstances will have different neuron connections. For example, a kid born in India and Canada will have different connections established because of their language / culture / parents etc.,&lt;/p&gt;
 
@@ -69,7 +100,48 @@ Similarly, when a kid is born in Canada, he knows how snow looks and feels but k
 
 &lt;p&gt;When we learn a new thing, a new connection will be formed between set of neurons and weights / thickness will be established.&lt;/p&gt;
 
-&lt;p&gt;Hope you like this article and please share your feedback.&lt;/p&gt;</content><author><name>Chaitanya Sagar Kuracha</name></author><summary type="html">In this article, we will look into how Biological Neurons work and how it is different from Artificial Neurons</summary></entry><entry><title type="html">Distance Measures</title><link href="http://localhost:4000/2021/04/04/Distance-Measures.html" rel="alternate" type="text/html" title="Distance Measures" /><published>2021-04-04T00:00:00+05:30</published><updated>2021-04-04T00:00:00+05:30</updated><id>http://localhost:4000/2021/04/04/Distance-Measures</id><content type="html" xml:base="http://localhost:4000/2021/04/04/Distance-Measures.html">&lt;p&gt;In this article, we will look into different distance measures we will use in Machine Learning.&lt;/p&gt;
+&lt;p&gt;Hope you like this article and please share your feedback.&lt;/p&gt;</content><author><name>Chaitanya Sagar Kuracha</name></author><summary type="html">In this article, we will look into how Biological Neurons work and how it is different from Artificial Neurons</summary></entry><entry><title type="html">Classification and Regression</title><link href="http://localhost:4000/2021/04/04/Classification-and-regression.html" rel="alternate" type="text/html" title="Classification and Regression" /><published>2021-04-04T00:00:00+05:30</published><updated>2021-04-04T00:00:00+05:30</updated><id>http://localhost:4000/2021/04/04/Classification-and-regression</id><content type="html" xml:base="http://localhost:4000/2021/04/04/Classification-and-regression.html">&lt;p&gt;In this article, we will look into two different kinds of Machine learning algorithms, Classification and Regression models.&lt;/p&gt;
+
+&lt;p&gt;The main objective of Machine learning model is to find a function f, such that when a query point (x_q) is passed thru the function f, it will return desired output (y_q_^)&lt;/p&gt;
+
+&lt;h3 id=&quot;classification&quot;&gt;Classification:&lt;/h3&gt;
+
+&lt;p&gt;Lets consider an example for understanding the classification problems. Say, we want to classify reviews in an eCommerce website and typically we need to classify each review as positive review, negative review or neutral review. 
+This type of problem is called Classification problem.&lt;/p&gt;
+
+&lt;p&gt;Here when we look closely, we are classifying the datapoints into set of classes like positive, negative, neutral etc.. This kind of technique is called Classification.&lt;/p&gt;
+
+&lt;p&gt;We can interpret classification dataset as below:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;img src=&quot;/assets/images/2021-04-04-Classifiction-and-regression-1.jpg&quot; alt=&quot;Classification&quot; /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;where x is input data and y is the output class.&lt;/p&gt;
+
+&lt;h3 id=&quot;regression&quot;&gt;Regression:&lt;/h3&gt;
+
+&lt;p&gt;Consider this example for understanding regression problems. Say, we want to predict the heights of students in a school. Here our predicted value is a real number since height is a real number.&lt;/p&gt;
+
+&lt;p&gt;We can interpret regression dataset as below:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;img src=&quot;/assets/images/2021-04-04-Classifiction-and-regression-2.jpg&quot; alt=&quot;Regression&quot; /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;where x is input data and y is a real valued number&lt;/p&gt;
+
+&lt;h3 id=&quot;did-you-observe-difference-between-classification-and-regression-&quot;&gt;Did you observe difference between Classification and Regression ?&lt;/h3&gt;
+
+&lt;p&gt;If you observe closely on the dataset interpretations for Classification and Regression,  we can see the difference in the output variable ‘y’.&lt;/p&gt;
+
+&lt;p&gt;In Classification, ‘y’ is a finite number where as in Regression, ‘y’ is a real valued number, which is a difference on very high level. We will understand more differences as we go on.&lt;/p&gt;
+
+&lt;h3 id=&quot;bottomline&quot;&gt;Bottomline:&lt;/h3&gt;
+
+&lt;p&gt;On simple and very highlevel terms, difference between Classification and Regression comes to difference between finite integer and Real valued number 😃&lt;/p&gt;
+
+&lt;p&gt;Hope you like this article and feel free to share your comments.&lt;/p&gt;</content><author><name>Chaitanya Sagar Kuracha</name></author><summary type="html">In this article, we will look into two different kinds of Machine learning algorithms, Classification and Regression models.</summary></entry><entry><title type="html">Distance Measures</title><link href="http://localhost:4000/2021/04/04/Distance-Measures.html" rel="alternate" type="text/html" title="Distance Measures" /><published>2021-04-04T00:00:00+05:30</published><updated>2021-04-04T00:00:00+05:30</updated><id>http://localhost:4000/2021/04/04/Distance-Measures</id><content type="html" xml:base="http://localhost:4000/2021/04/04/Distance-Measures.html">&lt;p&gt;In this article, we will look into different distance measures we will use in Machine Learning.&lt;/p&gt;
 
 &lt;h3 id=&quot;1-euclidean-distance-l2&quot;&gt;1. Euclidean Distance (L2):&lt;/h3&gt;
 
@@ -133,48 +205,7 @@ Hamming distance will  be used in Gene sequence.&lt;/p&gt;
 &lt;p&gt;There are many distance measures that are used in Machine Learning and few of them are Manhattan distance, Euclidean distance, Minkowski distance and Hamming distance. 
 There are other distance measures also which are widely used and we will see them in future articles.&lt;/p&gt;
 
-&lt;p&gt;Hope you like this article and please share your feedback.&lt;/p&gt;</content><author><name>Chaitanya Sagar Kuracha</name></author><summary type="html">In this article, we will look into different distance measures we will use in Machine Learning.</summary></entry><entry><title type="html">Classification and Regression</title><link href="http://localhost:4000/2021/04/04/Classification-and-regression.html" rel="alternate" type="text/html" title="Classification and Regression" /><published>2021-04-04T00:00:00+05:30</published><updated>2021-04-04T00:00:00+05:30</updated><id>http://localhost:4000/2021/04/04/Classification-and-regression</id><content type="html" xml:base="http://localhost:4000/2021/04/04/Classification-and-regression.html">&lt;p&gt;In this article, we will look into two different kinds of Machine learning algorithms, Classification and Regression models.&lt;/p&gt;
-
-&lt;p&gt;The main objective of Machine learning model is to find a function f, such that when a query point (x_q) is passed thru the function f, it will return desired output (y_q_^)&lt;/p&gt;
-
-&lt;h3 id=&quot;classification&quot;&gt;Classification:&lt;/h3&gt;
-
-&lt;p&gt;Lets consider an example for understanding the classification problems. Say, we want to classify reviews in an eCommerce website and typically we need to classify each review as positive review, negative review or neutral review. 
-This type of problem is called Classification problem.&lt;/p&gt;
-
-&lt;p&gt;Here when we look closely, we are classifying the datapoints into set of classes like positive, negative, neutral etc.. This kind of technique is called Classification.&lt;/p&gt;
-
-&lt;p&gt;We can interpret classification dataset as below:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;img src=&quot;/assets/images/2021-04-04-Classifiction-and-regression-1.jpg&quot; alt=&quot;Classification&quot; /&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;where x is input data and y is the output class.&lt;/p&gt;
-
-&lt;h3 id=&quot;regression&quot;&gt;Regression:&lt;/h3&gt;
-
-&lt;p&gt;Consider this example for understanding regression problems. Say, we want to predict the heights of students in a school. Here our predicted value is a real number since height is a real number.&lt;/p&gt;
-
-&lt;p&gt;We can interpret regression dataset as below:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;img src=&quot;/assets/images/2021-04-04-Classifiction-and-regression-2.jpg&quot; alt=&quot;Regression&quot; /&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;where x is input data and y is a real valued number&lt;/p&gt;
-
-&lt;h3 id=&quot;did-you-observe-difference-between-classification-and-regression-&quot;&gt;Did you observe difference between Classification and Regression ?&lt;/h3&gt;
-
-&lt;p&gt;If you observe closely on the dataset interpretations for Classification and Regression,  we can see the difference in the output variable ‘y’.&lt;/p&gt;
-
-&lt;p&gt;In Classification, ‘y’ is a finite number where as in Regression, ‘y’ is a real valued number, which is a difference on very high level. We will understand more differences as we go on.&lt;/p&gt;
-
-&lt;h3 id=&quot;bottomline&quot;&gt;Bottomline:&lt;/h3&gt;
-
-&lt;p&gt;On simple and very highlevel terms, difference between Classification and Regression comes to difference between finite integer and Real valued number 😃&lt;/p&gt;
-
-&lt;p&gt;Hope you like this article and feel free to share your comments.&lt;/p&gt;</content><author><name>Chaitanya Sagar Kuracha</name></author><summary type="html">In this article, we will look into two different kinds of Machine learning algorithms, Classification and Regression models.</summary></entry><entry><title type="html">Test Post</title><link href="http://localhost:4000/2021/04/03/Test-Post.html" rel="alternate" type="text/html" title="Test Post" /><published>2021-04-03T00:00:00+05:30</published><updated>2021-04-03T00:00:00+05:30</updated><id>http://localhost:4000/2021/04/03/Test-Post</id><content type="html" xml:base="http://localhost:4000/2021/04/03/Test-Post.html">&lt;p&gt;This is a Test Page&lt;/p&gt;
+&lt;p&gt;Hope you like this article and please share your feedback.&lt;/p&gt;</content><author><name>Chaitanya Sagar Kuracha</name></author><summary type="html">In this article, we will look into different distance measures we will use in Machine Learning.</summary></entry><entry><title type="html">Test Post</title><link href="http://localhost:4000/2021/04/03/Test-Post.html" rel="alternate" type="text/html" title="Test Post" /><published>2021-04-03T00:00:00+05:30</published><updated>2021-04-03T00:00:00+05:30</updated><id>http://localhost:4000/2021/04/03/Test-Post</id><content type="html" xml:base="http://localhost:4000/2021/04/03/Test-Post.html">&lt;p&gt;This is a Test Page&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&quot;language-math&quot;&gt;a+b=c
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;{(x_i,y_i)}&lt;/p&gt;</content><author><name>Chaitanya Sagar Kuracha</name></author><summary type="html">This is a Test Page a+b=c {(x_i,y_i)}</summary></entry><entry><title type="html">Different techniques to convert words to vectors</title><link href="http://localhost:4000/2021/04/03/techniques-to-convert-words-to-vectors.html" rel="alternate" type="text/html" title="Different techniques to convert words to vectors" /><published>2021-04-03T00:00:00+05:30</published><updated>2021-04-03T00:00:00+05:30</updated><id>http://localhost:4000/2021/04/03/techniques-to-convert-words-to-vectors</id><content type="html" xml:base="http://localhost:4000/2021/04/03/techniques-to-convert-words-to-vectors.html">&lt;p&gt;In Machine Learning, we want to convert words into vectors to fully utilize the mathematical functions for the model.&lt;/p&gt;
