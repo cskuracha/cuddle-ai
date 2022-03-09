@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Biological Neurons
+title: Creating a Python Environment
 ---
 In this article, we will try to lean about creating virtual environment in Python.
 ** Creating Virtual Environment **
