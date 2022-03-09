@@ -36,7 +36,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Creating a Python Environment",
-        "excerpt":"In this article, we will try to lean about creating virtual environment in Python. ** Creating Virtual Environment ** Creating a virtual environment in Python is easy task. Before creating a virtual environment, make sure pip is installed and updated. pip install virtualenv * Use below command in Command Prompt...","categories": [],
+        "excerpt":"In this article, we will try to lean about creating virtual environment in Python. Creating Virtual Environment Creating a virtual environment in Python is easy task. Before creating a virtual environment, make sure pip is installed and updated. pip install virtualenv Use below command in Command Prompt to create the...","categories": [],
         "tags": [],
         "url": "/2022/03/10/Creating-Python-Environment.html",
         "teaser": null

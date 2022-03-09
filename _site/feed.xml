@@ -1,35 +1,19 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-03-10T00:52:28+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">cuddle-ai</title><author><name>Chaitanya Sagar Kuracha</name></author><entry><title type="html">Creating a Python Environment</title><link href="http://localhost:4000/2022/03/10/Creating-Python-Environment.html" rel="alternate" type="text/html" title="Creating a Python Environment" /><published>2022-03-10T00:00:00+05:30</published><updated>2022-03-10T00:00:00+05:30</updated><id>http://localhost:4000/2022/03/10/Creating-Python-Environment</id><content type="html" xml:base="http://localhost:4000/2022/03/10/Creating-Python-Environment.html">&lt;p&gt;In this article, we will try to lean about creating virtual environment in Python.
-** Creating Virtual Environment **
-Creating a virtual environment in Python is easy task. Before creating a virtual environment, make sure pip is installed and updated.&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;pip install virtualenv *&lt;/li&gt;
-&lt;/ul&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-03-10T01:15:24+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">cuddle-ai</title><author><name>Chaitanya Sagar Kuracha</name></author><entry><title type="html">Creating a Python Environment</title><link href="http://localhost:4000/2022/03/10/Creating-Python-Environment.html" rel="alternate" type="text/html" title="Creating a Python Environment" /><published>2022-03-10T00:00:00+05:30</published><updated>2022-03-10T00:00:00+05:30</updated><id>http://localhost:4000/2022/03/10/Creating-Python-Environment</id><content type="html" xml:base="http://localhost:4000/2022/03/10/Creating-Python-Environment.html">&lt;p&gt;In this article, we will try to lean about creating virtual environment in Python.
+&lt;strong&gt;Creating Virtual Environment&lt;/strong&gt;
+Creating a virtual environment in Python is easy task. Before creating a virtual environment, make sure pip is installed and updated.
+&lt;em&gt;pip install virtualenv&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;Use below command in Command Prompt to create the virtual environment:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;virtualenv &lt;Name of=&quot;&quot; the=&quot;&quot; virtual=&quot;&quot; environment=&quot;&quot;&gt; *&lt;/Name&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;Use below command in Command Prompt to create the virtual environment:
+&lt;em&gt;virtualenv Name of the virtual environment&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;Once the environment is created, make sure environment is activated. To activate the virtual environment, use below command:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;Path to=&quot;&quot; virtual=&quot;&quot; environment=&quot;&quot;&gt;/Scripts/Activate *
+&lt;p&gt;Once the environment is created, make sure environment is activated. To activate the virtual environment, use below command:
+&lt;em&gt;Path to virtual environment/Scripts/Activate&lt;/em&gt;&lt;/p&gt;
 
-&lt;/Path&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;To deactivate the virtual environment, use below command:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;Path to=&quot;&quot; virtual=&quot;&quot; environment=&quot;&quot;&gt;/Scripts/Deactivate *
+&lt;p&gt;To deactivate the virtual environment, use below command:
+&lt;em&gt;Path to virtual environment/Scripts/Deactivate&lt;/em&gt;&lt;/p&gt;
 
-&lt;/Path&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;To check the version of Python, use below command:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;python –version *&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Chaitanya Sagar Kuracha</name></author><summary type="html">In this article, we will try to lean about creating virtual environment in Python. ** Creating Virtual Environment ** Creating a virtual environment in Python is easy task. Before creating a virtual environment, make sure pip is installed and updated. pip install virtualenv *</summary></entry><entry><title type="html">Neural Networks - History</title><link href="http://localhost:4000/2021/04/08/Neural-Networks-History.html" rel="alternate" type="text/html" title="Neural Networks - History" /><published>2021-04-08T00:00:00+05:30</published><updated>2021-04-08T00:00:00+05:30</updated><id>http://localhost:4000/2021/04/08/Neural-Networks-History</id><content type="html" xml:base="http://localhost:4000/2021/04/08/Neural-Networks-History.html">&lt;p&gt;In this article, I want to give brief introduction to Neural Networks.&lt;/p&gt;
+&lt;p&gt;To check the version of Python, use below command:
+&lt;em&gt;python –version&lt;/em&gt;&lt;/p&gt;</content><author><name>Chaitanya Sagar Kuracha</name></author><summary type="html">In this article, we will try to lean about creating virtual environment in Python. Creating Virtual Environment Creating a virtual environment in Python is easy task. Before creating a virtual environment, make sure pip is installed and updated. pip install virtualenv</summary></entry><entry><title type="html">Neural Networks - History</title><link href="http://localhost:4000/2021/04/08/Neural-Networks-History.html" rel="alternate" type="text/html" title="Neural Networks - History" /><published>2021-04-08T00:00:00+05:30</published><updated>2021-04-08T00:00:00+05:30</updated><id>http://localhost:4000/2021/04/08/Neural-Networks-History</id><content type="html" xml:base="http://localhost:4000/2021/04/08/Neural-Networks-History.html">&lt;p&gt;In this article, I want to give brief introduction to Neural Networks.&lt;/p&gt;
 
 &lt;p&gt;First Neural Network was designed by Frank Rosenblatt in 1957 and is called perceptron. Concept is loosely inspired from Biological neurons.&lt;/p&gt;
 
