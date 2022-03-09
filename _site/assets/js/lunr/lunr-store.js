@@ -1,6 +1,6 @@
 var store = [{
         "title": "Test Post",
-        "excerpt":"This is a Test Page  a+b=c  {(x_i,y_i)}  ","categories": [],
+        "excerpt":"This is a Test Page  a+b=c  {(x_i,y_i)} on testing again  ","categories": [],
         "tags": [],
         "url": "/2021/04/03/Test-Post.html",
         "teaser": null
