@@ -1,5 +1,6 @@
 ---
 layout: single
+permalink: /posts/
 title: Adding Virtual Environment to Jupyter Notebook
 ---
 ## Adding a new virtual environment to Jupyter Notebook
